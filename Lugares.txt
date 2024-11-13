@@ -1,0 +1,28 @@
+NOMBRE,LAT,LOG
+Parque Central de Ciudad de Guatemala, 14.634915, -90.506882
+Catedral Metropolitana, 14.634239, -90.507558
+Museo Nacional de Arqueología y Etnología, 14.618710, -90.527808
+Centro Comercial Miraflores, 14.614839, -90.541521
+Jardín Botánico de la Universidad de San Carlos de Guatemala, 14.611918, -90.512917
+Museo Ixchel del Traje Indígena, 14.603189, -90.519698
+Parque Zoológico La Aurora, 14.598072, -90.519581
+Centro Cultural Miguel Ángel Asturias, 14.633587, -90.515267
+Kaminaljuyu (Sitio Arqueológico), 14.630664, -90.551144
+Palacio Nacional de la Cultura, 14.634472, -90.507108
+Museo Popol Vuh, 14.603372, -90.518890
+Avenida La Reforma, 14.606073, -90.517038
+Universidad Francisco Marroquín, 14.603795, -90.512186
+Mercado Central de Ciudad de Guatemala, 14.633574, -90.506128
+Torre del Reformador, 14.613263, -90.516823
+Centro Comercial Oakland Mall, 14.603964, -90.511438
+Centro Cívico de Guatemala, 14.623617, -90.513822
+Hospital Roosevelt, 14.612768, -90.558165
+Plaza de la Constitución, 14.634228, -90.507098
+Plaza Fontabella, 14.598709, -90.515167
+Centro Comercial Pradera Concepción, 14.554461937832098, -90.45493637377086
+Museo Nacional de Arte Moderno Carlos Mérida, 14.618418, -90.527141
+Parque Erick Barrondo, 14.621035, -90.500378
+Aeropuerto Internacional La Aurora, 14.588056, -90.530556
+Museo del Ferrocarril, 14.648166, -90.506420
+Parque Ecológico Kanajuyú, 14.609445, -90.481457
+Plaza Berlín, 14.569839451680426, -90.5264502649589
