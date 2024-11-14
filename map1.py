@@ -1,35 +1,36 @@
 import folium
 import pandas as pd
 
-tipo_color = {
-        "PR": "green",
-        "CC": "blue",
-        "MU": "purple",
-        "UN": "orange",
-        "HO": "red",
-        "AE": "gray",
-        "AV": "cadetblue"
-    }
-    
+tipo_config = {
+    "PR": {"type": "CircleMarker", "radius": 8, "fill_color": "lightgreen", "color": "green", "fill_opacity": 0.6, "fill": True},
+    "CC": {"type": "Marker", "icon": "shopping-bag", "color": "blue"},
+    "MU": {"type": "Marker", "icon": "university", "color": "purple"},
+    "UN": {"type": "Marker", "icon": "graduation-cap", "color": "orange"},
+    "HO": {"type": "Marker", "icon": "plus-square", "color": "red"},
+    "AE": {"type": "Marker", "icon": "plane", "color": "gray"},
+    "AV": {"type": "CircleMarker", "radius": 6, "fill_color": "lightblue", "color": "cadetblue", "fill_opacity": 0.6, "fill": True}
+}
 
 def getChild(tipo, latitud, longitud, lugar):
-    if tipo == "PR":
-        return folium.CircleMarker(location=[latitud, longitud], radius=8, popup=lugar, fill_color="lightgreen", color=tipo_color[tipo], fill_opacity=0.6, fill=True)
-    elif tipo == "CC":
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=tipo_color[tipo], icon="shopping-bag", prefix="fa"))
-    elif tipo == "MU":
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=tipo_color[tipo], icon="university", prefix="fa"))
-    elif tipo == "UN":
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=tipo_color[tipo], icon="graduation-cap", prefix="fa"))
-    elif tipo == "HO":
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=tipo_color[tipo], icon="plus-square", prefix="fa"))
-    elif tipo == "AE":
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=tipo_color[tipo], icon="plane", prefix="fa"))
-    elif tipo == "AV":
-        return folium.CircleMarker(location=[latitud, longitud], radius=6, popup=lugar, fill_color="lightblue", color=tipo_color[tipo], fill_opacity=0.6, fill=True)
-    else:
-        return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color="black", icon="question", prefix="fa"))
-
+    config = tipo_config.get(tipo)
+    if config:
+        if config["type"] == "CircleMarker":
+            return folium.CircleMarker(
+                location=[latitud, longitud],
+                radius=config["radius"],
+                popup=lugar,
+                fill_color=config["fill_color"],
+                color=config["color"],
+                fill_opacity=config["fill_opacity"],
+                fill=config["fill"]
+            )
+        elif config["type"] == "Marker":
+            return folium.Marker(
+                location=[latitud, longitud],
+                popup=lugar,
+                icon=folium.Icon(color=config["color"], icon=config["icon"], prefix="fa")
+            )
+    return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color="black", icon="question", prefix="fa"))
 
 data = pd.read_csv("Lugares.txt")
 
@@ -41,8 +42,6 @@ for row in data.itertuples(index=False):
     lugar, latitud, longitud, tipo = row.NOMBRE, row.LAT, row.LOG, str(row.TIPO).strip()
     child = getChild(tipo, latitud, longitud, lugar)
     fg.add_child(child)
-    
 
 map.add_child(fg)
-
 map.save("Map1.html")
