@@ -41,17 +41,45 @@ data = pd.read_csv("Lugares.txt")
 # Crear el mapa centrado en una ubicación
 map = folium.Map(location=[14.586521217402636, -90.52169884971288], zoom_start=15, title="Stamen Terrain")
 
-# Crear un grupo de características en el mapa
-fg = folium.FeatureGroup(name="My Map")
+# Crear grupos de características en el mapa para cada tipo de lugar
+fg_pr = folium.FeatureGroup(name="Parque o Área Verde")
+fg_cc = folium.FeatureGroup(name="Centro Comercial")
+fg_mu = folium.FeatureGroup(name="Museo o Sitio Histórico")
+fg_un = folium.FeatureGroup(name="Universidad o Escuela")
+fg_ho = folium.FeatureGroup(name="Hospital o Centro de Salud")
+fg_ae = folium.FeatureGroup(name="Aeropuerto")
+fg_av = folium.FeatureGroup(name="Avenida o Plaza")
 
 # Iterar sobre cada fila del archivo CSV y añadir un marcador al mapa
 for row in data.itertuples(index=False):
     lugar, latitud, longitud, tipo = row.NOMBRE, row.LAT, row.LOG, str(row.TIPO).strip()
     child = getChild(tipo, latitud, longitud, lugar)
-    fg.add_child(child)
+    if tipo == "PR":
+        fg_pr.add_child(child)
+    elif tipo == "CC":
+        fg_cc.add_child(child)
+    elif tipo == "MU":
+        fg_mu.add_child(child)
+    elif tipo == "UN":
+        fg_un.add_child(child)
+    elif tipo == "HO":
+        fg_ho.add_child(child)
+    elif tipo == "AE":
+        fg_ae.add_child(child)
+    elif tipo == "AV":
+        fg_av.add_child(child)
 
-# Añadir el grupo de marcadores al mapa
-map.add_child(fg)
+# Añadir los grupos de marcadores al mapa
+map.add_child(fg_pr)
+map.add_child(fg_cc)
+map.add_child(fg_mu)
+map.add_child(fg_un)
+map.add_child(fg_ho)
+map.add_child(fg_ae)
+map.add_child(fg_av)
+
+# Añadir un control de capas al mapa
+map.add_child(folium.LayerControl())
 
 # Guardar el mapa como un archivo HTML
 map.save("Map1.html")
