@@ -8,10 +8,9 @@ map = folium.Map(location=[14.586521217402636, -90.52169884971288], zoom_start=1
 fg = folium.FeatureGroup(name="My Map")
 
 for row in data.itertuples(index=False):
-    lugar, latitud, longitud = row.NOMBRE, row.LAT, row.LOG
-    fg.add_child(folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color="blue")))
+    lugar, latitud, longitud, color = row.NOMBRE, row.LAT, row.LOG, str(row.COLOR).strip().lower()
+    fg.add_child(folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color=color)))
 
-fg.add_child(folium.Marker(location=[14.586521217402636, -90.52169884971288], popup="Paiz, Américas", icon=folium.Icon(color="green")))
 
 map.add_child(fg)
 
