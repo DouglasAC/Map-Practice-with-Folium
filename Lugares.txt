@@ -26,3 +26,18 @@ Aeropuerto Internacional La Aurora, 14.588056, -90.530556, AE
 Museo del Ferrocarril, 14.648166, -90.506420, MU
 Parque Ecológico Kanajuyú, 14.609445, -90.481457, PR
 Plaza Berlín, 14.569839451680426, -90.5264502649589, AV
+Universidad de San Carlos de Guatemala, 14.605291, -90.552555, UN
+Universidad del Valle de Guatemala, 14.603784, -90.489219, UN
+Universidad Mariano Gálvez de Guatemala, 14.636314, -90.510871, UN
+Universidad Rafael Landívar, 14.604148, -90.489319, UN
+Universidad InterNaciones, 14.600833, -90.510833, UN
+Colegio Americano de Guatemala, 14.612350, -90.516208, UN
+Colegio Alemán de Guatemala, 14.594228, -90.514483, UN
+Liceo Javier, 14.625232, -90.512343, UN
+Colegio Montessori, 14.614185, -90.496982, UN
+Colegio Capouilliez, 14.610272, -90.504122, UN
+Hospital General San Juan de Dios, 14.636185, -90.513840, HO
+Hospital Herrera Llerandi, 14.603892, -90.511547, HO
+Hospital Ángeles, 14.584256, -90.550164, HO
+Hospital El Pilar, 14.596228, -90.510900, HO
+Hospital Centro Médico, 14.599253, -90.511767, HO
