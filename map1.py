@@ -1,6 +1,7 @@
 import folium
 import pandas as pd
 
+# Configuración para cada tipo de lugar
 tipo_config = {
     "PR": {"type": "CircleMarker", "radius": 8, "fill_color": "lightgreen", "color": "green", "fill_opacity": 0.6, "fill": True},
     "CC": {"type": "Marker", "icon": "shopping-bag", "color": "blue"},
@@ -11,6 +12,8 @@ tipo_config = {
     "AV": {"type": "CircleMarker", "radius": 6, "fill_color": "lightblue", "color": "cadetblue", "fill_opacity": 0.6, "fill": True}
 }
 
+
+# Función para crear el marcador o círculo según el tipo de lugar
 def getChild(tipo, latitud, longitud, lugar):
     config = tipo_config.get(tipo)
     if config:
@@ -32,16 +35,23 @@ def getChild(tipo, latitud, longitud, lugar):
             )
     return folium.Marker(location=[latitud, longitud], popup=lugar, icon=folium.Icon(color="black", icon="question", prefix="fa"))
 
+# Leer los datos desde el archivo CSV
 data = pd.read_csv("Lugares.txt")
 
+# Crear el mapa centrado en una ubicación
 map = folium.Map(location=[14.586521217402636, -90.52169884971288], zoom_start=15, title="Stamen Terrain")
 
+# Crear un grupo de características en el mapa
 fg = folium.FeatureGroup(name="My Map")
 
+# Iterar sobre cada fila del archivo CSV y añadir un marcador al mapa
 for row in data.itertuples(index=False):
     lugar, latitud, longitud, tipo = row.NOMBRE, row.LAT, row.LOG, str(row.TIPO).strip()
     child = getChild(tipo, latitud, longitud, lugar)
     fg.add_child(child)
 
+# Añadir el grupo de marcadores al mapa
 map.add_child(fg)
+
+# Guardar el mapa como un archivo HTML
 map.save("Map1.html")
