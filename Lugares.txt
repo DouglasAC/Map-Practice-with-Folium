@@ -1,28 +1,28 @@
-NOMBRE,LAT,LOG,COLOR
-Parque Central de Ciudad de Guatemala, 14.634915, -90.506882, green
-Catedral Metropolitana, 14.634239, -90.507558, purple
-Museo Nacional de Arqueología y Etnología, 14.618710, -90.527808, purple
-Centro Comercial Miraflores, 14.614839, -90.541521, blue
-Jardín Botánico de la Universidad de San Carlos de Guatemala, 14.611918, -90.512917, green
-Museo Ixchel del Traje Indígena, 14.603189, -90.519698, purple
-Parque Zoológico La Aurora, 14.598072, -90.519581, green
-Centro Cultural Miguel Ángel Asturias, 14.633587, -90.515267, purple
-Kaminaljuyu (Sitio Arqueológico), 14.630664, -90.551144, purple
-Palacio Nacional de la Cultura, 14.634472, -90.507108, purple
-Museo Popol Vuh, 14.603372, -90.518890, purple
-Avenida La Reforma, 14.606073, -90.517038, cadetblue
-Universidad Francisco Marroquín, 14.603795, -90.512186, orange
-Mercado Central de Ciudad de Guatemala, 14.633574, -90.506128, purple
-Torre del Reformador, 14.613263, -90.516823, cadetblue
-Centro Comercial Oakland Mall, 14.603964, -90.511438, blue
-Centro Cívico de Guatemala, 14.623617, -90.513822, cadetblue
-Hospital Roosevelt, 14.612768, -90.558165, red
-Plaza de la Constitución, 14.634228, -90.507098, cadetblue
-Plaza Fontabella, 14.598709, -90.515167, blue
-Centro Comercial Pradera Concepción, 14.554461937832098, -90.45493637377086, blue
-Museo Nacional de Arte Moderno Carlos Mérida, 14.618418, -90.527141, purple
-Parque Erick Barrondo, 14.621035, -90.500378, green
-Aeropuerto Internacional La Aurora, 14.588056, -90.530556, gray
-Museo del Ferrocarril, 14.648166, -90.506420, purple
-Parque Ecológico Kanajuyú, 14.609445, -90.481457, green
-Plaza Berlín, 14.569839451680426, -90.5264502649589, cadetblue
+NOMBRE,LAT,LOG,TIPO
+Parque Central de Ciudad de Guatemala, 14.634915, -90.506882, PR
+Catedral Metropolitana, 14.634239, -90.507558, MU
+Museo Nacional de Arqueología y Etnología, 14.618710, -90.527808, MU
+Centro Comercial Miraflores, 14.614839, -90.541521, CC
+Jardín Botánico de la Universidad de San Carlos de Guatemala, 14.611918, -90.512917, PR
+Museo Ixchel del Traje Indígena, 14.603189, -90.519698, MU
+Parque Zoológico La Aurora, 14.598072, -90.519581, PR
+Centro Cultural Miguel Ángel Asturias, 14.633587, -90.515267, MU
+Kaminaljuyu (Sitio Arqueológico), 14.630664, -90.551144, MU
+Palacio Nacional de la Cultura, 14.634472, -90.507108, MU
+Museo Popol Vuh, 14.603372, -90.518890, MU
+Avenida La Reforma, 14.606073, -90.517038, AV
+Universidad Francisco Marroquín, 14.603795, -90.512186, UN
+Mercado Central de Ciudad de Guatemala, 14.633574, -90.506128, MU
+Torre del Reformador, 14.613263, -90.516823, AV
+Centro Comercial Oakland Mall, 14.603964, -90.511438, CC
+Centro Cívico de Guatemala, 14.623617, -90.513822, AV
+Hospital Roosevelt, 14.612768, -90.558165, HO
+Plaza de la Constitución, 14.634228, -90.507098, AV
+Plaza Fontabella, 14.598709, -90.515167, CC
+Centro Comercial Pradera Concepción, 14.554461937832098, -90.45493637377086, CC
+Museo Nacional de Arte Moderno Carlos Mérida, 14.618418, -90.527141, MU
+Parque Erick Barrondo, 14.621035, -90.500378, PR
+Aeropuerto Internacional La Aurora, 14.588056, -90.530556, AE
+Museo del Ferrocarril, 14.648166, -90.506420, MU
+Parque Ecológico Kanajuyú, 14.609445, -90.481457, PR
+Plaza Berlín, 14.569839451680426, -90.5264502649589, AV
