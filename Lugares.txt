@@ -2,7 +2,7 @@ NOMBRE,LAT,LOG,TIPO
 Parque Central de Ciudad de Guatemala, 14.634915, -90.506882, PR
 Catedral Metropolitana, 14.634239, -90.507558, MU
 Museo Nacional de Arqueología y Etnología, 14.618710, -90.527808, MU
-Centro Comercial Miraflores, 14.614839, -90.541521, CC
+Centro Comercial Miraflores, 14.620479951616636, -90.55407182021592, CC
 Jardín Botánico de la Universidad de San Carlos de Guatemala, 14.611918, -90.512917, PR
 Museo Ixchel del Traje Indígena, 14.603189, -90.519698, MU
 Parque Zoológico La Aurora, 14.598072, -90.519581, PR
@@ -16,12 +16,12 @@ Mercado Central de Ciudad de Guatemala, 14.633574, -90.506128, MU
 Torre del Reformador, 14.613263, -90.516823, AV
 Centro Comercial Oakland Mall, 14.603964, -90.511438, CC
 Centro Cívico de Guatemala, 14.623617, -90.513822, AV
-Hospital Roosevelt, 14.612768, -90.558165, HO
+Hospital Roosevelt, 14.613000521561503, -90.54274334720222, HO
 Plaza de la Constitución, 14.634228, -90.507098, AV
 Plaza Fontabella, 14.598709, -90.515167, CC
-Centro Comercial Pradera Concepción, 14.554461937832098, -90.45493637377086, CC
+Centro Comercial Pradera Concepción, 14.552750924540067, -90.45377700487457s, CC
 Museo Nacional de Arte Moderno Carlos Mérida, 14.618418, -90.527141, MU
-Parque Erick Barrondo, 14.621035, -90.500378, PR
+Parque Erick Barrondo, 14.639438557614895, -90.54114510487308, PR
 Aeropuerto Internacional La Aurora, 14.588056, -90.530556, AE
 Museo del Ferrocarril, 14.648166, -90.506420, MU
 Parque Ecológico Kanajuyú, 14.609445, -90.481457, PR
