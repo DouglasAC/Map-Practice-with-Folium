@@ -5,7 +5,7 @@ Museo Nacional de Arqueología y Etnología, 14.618710, -90.527808, MU
 Centro Comercial Miraflores, 14.620479951616636, -90.55407182021592, CC
 Jardín Botánico de la Universidad de San Carlos de Guatemala, 14.611918, -90.512917, PR
 Museo Ixchel del Traje Indígena, 14.603189, -90.519698, MU
-Parque Zoológico La Aurora, 14.598072, -90.519581, PR
+Parque Zoológico La Aurora, 14.59887115246187, -90.52583873370938, PR
 Centro Cultural Miguel Ángel Asturias, 14.633587, -90.515267, MU
 Kaminaljuyu (Sitio Arqueológico), 14.630664, -90.551144, MU
 Palacio Nacional de la Cultura, 14.634472, -90.507108, MU
@@ -19,7 +19,7 @@ Centro Cívico de Guatemala, 14.623617, -90.513822, AV
 Hospital Roosevelt, 14.613000521561503, -90.54274334720222, HO
 Plaza de la Constitución, 14.634228, -90.507098, AV
 Plaza Fontabella, 14.598709, -90.515167, CC
-Centro Comercial Pradera Concepción, 14.552750924540067, -90.45377700487457s, CC
+Centro Comercial Pradera Concepción, 14.552750924540067, -90.45377700487457, CC
 Museo Nacional de Arte Moderno Carlos Mérida, 14.618418, -90.527141, MU
 Parque Erick Barrondo, 14.639438557614895, -90.54114510487308, PR
 Aeropuerto Internacional La Aurora, 14.588056, -90.530556, AE
