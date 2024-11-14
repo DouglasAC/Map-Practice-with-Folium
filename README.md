@@ -29,7 +29,6 @@ Cada tipo de lugar tiene una configuración específica para su marcador o círc
 3. Asegúrate de tener el archivo `Lugares.txt` en formato CSV con la estructura:
     ```bash
     NOMBRE, LAT, LOG, TIPO
-
 ## Uso
 
 1. Corre el script de Python para generar el mapa:
